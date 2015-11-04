@@ -26,6 +26,10 @@ namespace SampleApi.Controllers
     builder.EntitySet<MovieResult>("MovieResults");
     config.Routes.MapODataServiceRoute("odata", "odata", builder.GetEdmModel());
     */
+
+    /// <summary>
+    /// OData Controller 
+    /// </summary>
     public class MovieResultsController : ODataController
     {
         private SqlExpressNovemberDataContext db = new SqlExpressNovemberDataContext();
